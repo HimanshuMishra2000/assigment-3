@@ -1,19 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-// import React, { Component }  from 'react';
+import { useState } from 'react'
 
-
-// import { Groceries } from './components/Groceries';
-import {Groceries} from "./components/Groceries"
+import './App.css'
+import { EmpolyForm } from './components/employform'
 
 function App() {
+  const [count, setCount] = useState(0)
 
   return (
-  
     <div className="App">
-   <Groceries/>
+     <EmpolyForm/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
